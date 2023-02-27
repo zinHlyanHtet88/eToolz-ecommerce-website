@@ -1,0 +1,25 @@
+users = [name, email, phone, address, gender]
+
+categories = [name, image]
+
+products = [name,category_id, category_name, price, sim, storage, processor, size]
+
+carts = [user_id, product_id, quantity, total_price]
+
+orders = [user_id, product_id, total_price, order_code, status]
+
+orderLists = [user_id, order_code, total_price]
+
+ratings = [user_id, product_id, rating_count, message]
+
+message = [name, email, message]
+
+
+
+mac = storage, memory, processor
+
+iPhone = storage, sim
+
+iPad = storage
+
+watch = size

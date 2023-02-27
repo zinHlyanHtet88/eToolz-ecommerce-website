@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* add style to nav bar dropdown  */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.dropdown .dropdown-content {
+    padding: 10px 0px;
+    border: none;
+    width: 200px;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.5s;
+    background-color:white;
+    border-radius: 3px;
+    border: 1px solid #D3D3D3;
+
+}
+
+
+.dropdown .dropdown-button {
+    padding: 15px 110px 15px 0px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.table-list {
+    width: 80%;
+
+
+}
+
+.table-list td, .table-list th {
+    padding: 19px 10px 18px 10px;
+
+}
+
+.table-list thead tr th {
+    border-bottom: 1px solid #ddd;
+    color: grey;
+    font-size: 24px;
+}
+.table1 {
+    width: 95%;
+    margin-left: 20px;
+}
+
+.table1 td, .table1 th{
+    padding: 19px 10px 18px 10px;
+}
+
+.table1 thead tr th {
+    border-bottom: 1px solid #ddd;
+    color: grey;
+    font-size: 15px;
+}
+
+/* products list table  */
+.products-table thead tr th{
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.products-table td, .products-table th {
+    padding: 19px 10px 18px 10px;
+}
+
+
+/* making main blade responsive  */
+
+@media (max-width: 2100px) {
+    .toggle-btn {
+        display: none;
+    }
+    .mini-header {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-bar {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .test {
+        display: block;
+    }
+    .dropdown button {
+        padding: 10px 50px 10px 0px;
+        width: 150px;
+    }
+    .dropdown .user-name {
+        font-size: 2px;
+    }
+    .mini-header {
+        display: block;
+    }
+
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .pagination button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .pagination button:hover {
+    background-color: #ccc;
+  }
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
